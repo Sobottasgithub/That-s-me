@@ -3,15 +3,18 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <!--Tile-->
+    <!--~~Tile~~-->
     <title>That's me!</title>
-    <!--Icon-->
+
+    <!--~~Icon~~-->
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <!--Fonts-->
+
+    <!--~~Fonts~~-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rock+3D&display=swap" rel="stylesheet">
-    <!--Style-->
+
+    <!--~~Style~~-->
     <style>
 
         /*---Main colors---*/
@@ -33,7 +36,7 @@
         }
 
         .placeholder {
-            height: 20em;
+            height: 50em;
             background-color: var(--bg-secondary);
             margin: auto;
             width: 60%;
@@ -41,13 +44,53 @@
             padding: 10px;
         }
 
+        .center {
+            text-align: center;
+        }
+
+        hr {
+            background-color: var(--text);
+            color: var(--text);
+        }
+
+        .position1 {
+            position: relative;
+            top: -5em;
+            right: -4em;
+        }
+
+        .profilepicture {
+            vertical-align: middle;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
         /*---buttons and stuff---*/
+
+
 
     </style>
 </head>
 <body>
     <div class="placeholder">
-        <center><h1 style="font-family: 'Rock 3D';">Who am I?</h1></center>
+
+        <div class="center">
+            <h1 style="font-family: 'Rock 3D';">Who am I?</h1>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <hr />
+
+        <div class="position1">
+            <!--<img src="profilepicture.png" alt="Avatar" class="profilepicture">-->
+            <img class="profilepicture" src="{{url_for('static', filename='profilepicture.png')}}" alt="Avatar" />
+        </div>
+
     </div>
 </body>
 </html>
