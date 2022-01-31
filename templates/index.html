@@ -11,9 +11,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rock+3D&display=swap" rel="stylesheet">
     <!--Style-->
     <style>
+
+        /*---Main colors---*/
+        :root {
+            font-size: 16px;
+            font-family: 'Microsoft Sans Serif';
+            --bn-primary: #F64C72;
+            --bn-secondary: #553D67;
+            --text: #EDF5E1;
+            --bg-primary: #2F2FA2;
+            --bg-secondary: #242582;
+            --special-color: #99738E;
+            --transition-speed: 600ms;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text);
+        }
+
+        .placeholder {
+            width: 25em;
+            height: 100%;
+            background-color: var(--bg-secondary);
+            text-align: center;
+        }
+
+        /*---buttons and stuff---*/
+
     </style>
 </head>
 <body>
-    <p>Hello world</p>
+    <div class="placeholder">
+        <h1>Hello World!</h1>
+    </div>
 </body>
 </html>
