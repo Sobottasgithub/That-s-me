@@ -53,10 +53,16 @@
             color: var(--text);
         }
 
-        .position1 {
+        .pos1 {
             position: relative;
             top: -5em;
             right: -4em;
+        }
+
+        .pos2 {
+            position: relative;
+            top: -5em;
+            right: -8em;
         }
 
         .profilepicture {
@@ -86,9 +92,13 @@
 
         <hr />
 
-        <div class="position1">
+        <div class="pos1">
             <!--<img src="profilepicture.png" alt="Avatar" class="profilepicture">-->
             <img class="profilepicture" src="{{url_for('static', filename='profilepicture.png')}}" alt="Avatar" />
+        </div>
+
+        <div class="pos2">
+            <input type="submit" class="" />
         </div>
 
     </div>
