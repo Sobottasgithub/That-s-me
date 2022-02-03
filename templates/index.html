@@ -78,8 +78,8 @@
             background-color: var(--text);
             color: #000000;
             border-radius: 32px;
-            width: 3em;
-            height: 1em;
+            width: 150px;
+            height: 50px;
             outline: none;
         }
 
@@ -101,11 +101,14 @@
 
         <div class="pos1">
             <!--<img src="profilepicture.png" alt="Avatar" class="profilepicture">-->
+            
             <img class="profilepicture" src="{{url_for('static', filename='profilepicture.png')}}" alt="Avatar" />
         </div>
 
         <div class="pos2">
-            <input class="cb" type="submit" name="submit_button" value="Contact me!" />
+            <form method="post">
+                <input class="cb" type="submit" name="submit_button" value="Contact me!" />
+            </form>
         </div>
 
         <h3><b>I'll introduce myself</b></h3>
