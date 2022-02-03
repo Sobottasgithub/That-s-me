@@ -65,6 +65,20 @@
             right: 22em;
         }
 
+        /*please change top and right*/
+        .pos3 {
+            position: relative;
+            top: -5em;
+            right: -4em;
+        }
+
+        /*please change top and right*/
+        .pos4 {
+            position: relative;
+            top: -5em;
+            right: -4em;
+        }
+
         .profilepicture {
             vertical-align: middle;
             width: 150px;
@@ -75,9 +89,9 @@
         /*---buttons and stuff---*/
 
         cb {
-            background-color: var(--text);
-            color: #000000;
-            border-radius: 32px;
+            background-color: #000000;
+            color: var(--text);
+            /*border-radius: 32px;*/
             width: 150px;
             height: 50px;
             outline: none;
@@ -101,8 +115,15 @@
 
         <div class="pos1">
             <!--<img src="profilepicture.png" alt="Avatar" class="profilepicture">-->
-            
             <img class="profilepicture" src="{{url_for('static', filename='profilepicture.png')}}" alt="Avatar" />
+        </div>
+
+        <div class="pos3">
+            <img src="{{url_for('static', filename='location.png')}}" /><steam>Germany</steam>
+        </div>
+
+        <div class="pos4">
+            <img src="{{url_for('static', filename='business.png')}}" /><steam>None</steam>
         </div>
 
         <div class="pos2">
@@ -118,11 +139,12 @@
         <p> For shure programming is the most what i do on daly bases.</p>
         <p> This is my first public reposetory but i programmed many more programs.</p>
         <br />
+        <br />
         <h3><b>My abilitys</b></h3>
         <br />
-        <p>- Html/css</p>
-        <p>- Python</p>
-        <p>- experience with Raspberry pi's</p>
+        <p>-Html/css</p>
+        <p>-Python</p>
+        <p>-experience with Raspberry pi's</p>
     </div>
 </body>
 </html>
