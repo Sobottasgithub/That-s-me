@@ -36,7 +36,7 @@
         }
 
         .placeholder {
-            height: 50em;
+            height: 65em;
             background-color: var(--bg-secondary);
             margin: auto;
             width: 60%;
@@ -79,6 +79,12 @@
 
         .pos5 {
             position: relative;
+            top: -11em;
+            right: -14em;
+        }
+
+        .pos6 {
+            position: relative;
             top: -5em;
         }
 
@@ -104,13 +110,17 @@
             width: 16px;
             height: 16px;
         }
+
+        .card {
+
+        }
     </style>
 </head>
 <body>
     <div class="placeholder">
 
         <div class="center">
-            <h1 style="font-family: 'Rock 3D';">Who is Patrick Schulze?</h1>
+            <h1 style="font-family: 'Rock 3D';">Who is Sobotta?</h1>
         </div>
 
         <br />
@@ -130,7 +140,7 @@
         </div>
 
         <div class="pos4">
-            <img src="{{url_for('static', filename='business.png')}}" class="icons"/><steam><b>None</b></steam>
+            <img src="{{url_for('static', filename='business.png')}}" class="icons" /><steam><b>None</b></steam>
         </div>
 
         <div class="pos2">
@@ -138,28 +148,42 @@
                 <input class="cb" type="submit" name="submit_button" value="Contact me!" />
             </form>
         </div>
+
         <div class="pos5">
+            <h3 style="font-family: 'Rock 3D';"><b>Patrick Schulze</b></h3>
+        </div>
+
+        <div class="pos6">
             <h3><b>I'll introduce myself</b></h3>
             <br />
-            <p> I'm a coder from germany and 14 years old. I try to do the best what i can, </p>
-            <p> and try to learn every day something new.</p>
-            <p> For shure programming is the most what i do on daly bases.</p>
-            <p> This is my first public reposetory but i programmed many more programs.</p>
+            <div class="card">
+                <p> I'm a coder from germany and 14 years old. I try to do the best what i can, </p>
+                <p> and try to learn every day something new.</p>
+                <p> For shure programming is the most what i do on daly bases.</p>
+                <p> This is my first public reposetory but i programmed many more programs.</p>
+            </div>
             <br />
             <h3><b>My abilitys</b></h3>
             <br />
-            <p> I started in 2019 with a Raspberry pi on which I taught the basics of Python. </p>
-            <p> After that I started to write more complex programs on my PC.</p>
-            <p> However, I've always been a fan of visualization. </p>
-            <p> That's why I started to learn html and css in 2021.</p> 
-            <p> In the backend I continued to use Python.</p>
+            <div class="card">
+                <p> I started in 2019 with a Raspberry pi on which I taught the basics of Python. </p>
+                <p> After that I started to write more complex programs on my PC.</p>
+                <p> However, I've always been a fan of visualization. </p>
+                <p> That's why I started to learn html and css in 2021.</p>
+                <p> In the backend I continued to use Python.</p>
+            </div>
             <br />
             <h3><b>Why did i write this website</b></h3>
             <br />
-            <p>I wanted to show you a little bit of my skills.</p>
-            <p>Of course,  I could have simply written an application to you,</p>
-            <p>but I wanted to show what I can do</p>
+            <div class="card">
+                <p>I wanted to show you a little bit of my skills.</p>
+                <p>Of course,  I could have simply written an application to you,</p>
+                <p>but I wanted to show what I can do</p>
+            </div>
         </div>
     </div>
 </body>
 </html>
+
+<!--Working hours: 10-->
+<!--This project has existed since 30.1.2022-->
