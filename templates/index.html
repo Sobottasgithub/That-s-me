@@ -68,23 +68,18 @@
         /*please change top and right*/
         .pos3 {
             position: relative;
-            top: -9em;
-            right: -16em;
+            top: -9.5em;
+            right: -14em;
         }
 
         /*please change top and right*/
         .pos4 {
             position: relative;
-            top: -7em;
-            right: -16em;
+            top: -8.5em;
+            right: -14em;
         }
 
-        .profilepicture {
-            vertical-align: middle;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
+
 
         /*---buttons and stuff---*/
 
@@ -97,6 +92,17 @@
             outline: none;
         }
 
+        .profilepicture {
+            vertical-align: middle;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .icons {
+            width: 16px;
+            height: 16px;
+        }
     </style>
 </head>
 <body>
@@ -119,11 +125,11 @@
         </div>
 
         <div class="pos3">
-            <img src="{{url_for('static', filename='location.png')}}" /><steam><b>Germany</b></steam>
+            <img src="{{url_for('static', filename='location.png')}}" class="icons" /><steam><b>Germany</b></steam>
         </div>
 
         <div class="pos4">
-            <img src="{{url_for('static', filename='business.png')}}" /><steam><b>None</b></steam>
+            <img src="{{url_for('static', filename='business.png')}}" class="icons"/><steam><b>None</b></steam>
         </div>
 
         <div class="pos2">
