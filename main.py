@@ -19,7 +19,7 @@ def index():
     
     #else
     elif request.method == 'GET':
-        print("ERROR something went wrong")
+        print("I wouldnt say thats an error but chack your code")
         return render_template('index.html')
     return render_template('index.html')
 
