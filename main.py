@@ -13,6 +13,7 @@ def index():
     if request.method == 'POST':
         if request.form['submit_button'] == 'Contact me!':
             print("My Email is ...")
+            # !=done
             return render_template('index.html')
         else:
             pass #unknown
